@@ -5,4 +5,4 @@ The bashscript simply executes a command to deploy the ec2 and within the same c
 
 If you are using an exisintg Linux ec2 instance, there is a .sh (bash script) file that you can use to install the prerequisite tools for the lab.
 
-There is also a mac version of the .sh script for the installation of these prerequisite installation.
+There is also a mac version of the .sh script for the installation of these prerequisite command line tools.

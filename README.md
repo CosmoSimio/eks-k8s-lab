@@ -1,6 +1,6 @@
 # eks-k8s-lab
 **Launching the lab on a fresh EC2 instance**
-- This project includes a bash script to initiate a new Linux EC2 instance and also includes the installation commands for the prequisite tools that we will be needing for this lab. These toold include kubectl, eksctl, and the aws command line (CLI) tool.
+- This project includes a bash script to initiate a new Linux EC2 instance and also includes the installation commands for the prequisite tools that we will be needing for this lab. These tools include kubectl, eksctl, and the aws command line (CLI) tool.
 
 - The bashscript simply executes a command to deploy the ec2 and within the same command, under 'user-data', we specify the filename of our bash script which is th prereqlinuxinstalls.txt file.
 

@@ -1,4 +1,5 @@
 # eks-k8s-lab
+**<H1>Options for Launch</H1>**
 **Launching the lab on a fresh EC2 instance**
 - This project includes a bash script to initiate a new Linux EC2 instance and also includes the installation commands for the prequisite tools that we will be needing for this lab. These tools include kubectl, eksctl, and the aws command line (CLI) tool.
 

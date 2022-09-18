@@ -1,4 +1,5 @@
 aws ec2 run-instances \
+--name ec2ekslinhost1 \
 --image-id <imageID> \
 --count 1 \
 --instance-type t2.small \

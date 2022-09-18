@@ -6,7 +6,7 @@
 - This bash script simply executes a command to deploy the ec2 and within the same command, under 'user-data', we specify the filename of our bash script which is th prereqlinuxinstalls.txt file.
 
 **<h2>Launching on an existing Linux EC2</h2>**
-- If you are using an exisintg Linux ec2 instance, you can run the prereqlinuxinstalls.sh (bash script) file to install the prerequisite tools for the lab.
+- If you are using an exisintg Linux ec2 instance, you can run the <code>prereqlinuxinstalls.sh</code> (bash script) file to install the prerequisite tools for the lab.
 
 **<h2>Launching from your mac console</h2>**
 - There is also a mac version of the bash script titled prereqmacinstall.sh that executes the installation of these prerequisite command line tools. This mac version of the script includes some additional install commands for additional tools needed in mac, such as Homebrew, Weaveworks Homebrew tap, and tree.

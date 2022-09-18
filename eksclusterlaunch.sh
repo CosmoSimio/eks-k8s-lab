@@ -6,3 +6,4 @@ eksctl create cluster \
 --nodegroup-name ekslab-k8s-nodes \
 --node-type t2.small \
 --nodes 2
+exit

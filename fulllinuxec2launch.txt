@@ -40,4 +40,4 @@ kubectl create namespace knote-sample-app
 kubectl apply -f kube
 
 echo "EKS Lab installation complete"
-exit
+--//--

@@ -22,5 +22,6 @@ sudo installer -pkg ./AWSCLIV2.pkg -target /
 
 #Install tree tool
 brew install tree
+
 echo "EKS Lab installation complete"
 exit

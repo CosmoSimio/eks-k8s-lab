@@ -1,3 +1,4 @@
+#!/bin/bash -e
 aws ec2 run-instances \
 --name ec2ekslinhost1 \
 --image-id <imageID> \
@@ -7,4 +8,3 @@ aws ec2 run-instances \
 --security-group-id <securityGroupName> \
 --tags Key=Owner,Value=<INSERT_WORK_EMAIL> Key=Purpose,Value=Lab Key=Name,Value=ec2ekslinhost1 \
 --user-data file://prereqlinuxinstalls.txt
-exit

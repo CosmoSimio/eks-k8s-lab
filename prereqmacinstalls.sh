@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e
 #Run this if this is your first time using the AWS CLI and/or Homebrew and/or Kubectl
 
 #Install kubectl
@@ -24,4 +24,3 @@ sudo installer -pkg ./AWSCLIV2.pkg -target /
 brew install tree
 
 echo "EKS Lab installation complete"
-exit

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # An example of ClusterConfig object using Managed Nodes
 ---
 apiVersion: eksctl.io/v1alpha5
@@ -36,4 +37,44 @@ managedNodeGroups:
 
 cloudWatch:
   clusterLogging:
+=======
+# An example of ClusterConfig object using Managed Nodes
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eks-k8s-lab-cluster
+  region: us-east-2
+
+iam:
+  withOIDC: true
+  serviceAccounts:
+  - metadata:
+      name: eksk8s-lab-admin
+      labels: { aws-usage: "lab-cluster-ops" }
+    attachPolicyARNs:
+    - arn:aws:iam::aws:policy/AdministratorAccess
+
+managedNodeGroups:
+  - name: base-nodegroup
+    spot: true
+    minSize: 2
+    desiredCapacity: 2
+    maxSize: 2
+    availabilityZones: ["us-east-2a", "us-east-2b"]
+    volumeSize: 20
+    labels: {role: worker}
+    tags:
+      nodegroup-role: kube-system-worker
+    iam:
+      withAddonPolicies:
+        albIngress: true
+        externalDNS: true
+        certManager: true
+        ebs: true
+
+cloudWatch:
+  clusterLogging:
+>>>>>>> 9f8e08470719ee49095372db8519ddffb763c8b4
     enableTypes: ["all"]

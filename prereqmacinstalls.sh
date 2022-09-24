@@ -33,4 +33,8 @@ echo "Installing aws CLI"
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg ./AWSCLIV2.pkg -target /
 
+<<<<<<< HEAD
 echo "EKS Lab installation complete"
+=======
+echo "EKS Lab installation complete"
+>>>>>>> 9f8e08470719ee49095372db8519ddffb763c8b4

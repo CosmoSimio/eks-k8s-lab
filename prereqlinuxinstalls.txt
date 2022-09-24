@@ -15,10 +15,18 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 #Move the downloaded ekstl binary to /usr/local/bin
 sudo mv /tmp/eksctl /usr/local/bin
 
-#Install the aws CLI tool
+#Install helm
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+echo "Installing unzip tool"
+#Installs unzip command
+sudo apt install unzip
+
+echo "Installing aws CLI. . . ."
+#Install the AWS CLI tool
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
-sudo ./aws/install
-
-echo "EKS Lab installation complete"
-exit
+./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+--//--

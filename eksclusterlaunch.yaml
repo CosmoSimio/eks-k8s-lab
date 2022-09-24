@@ -4,14 +4,14 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: eks-lab-k8cluster
+  name: eks-k8s-lab-cluster
   region: us-east-2
 
 iam:
   withOIDC: true
   serviceAccounts:
   - metadata:
-      name: k8s-admin
+      name: eksk8s-lab-admin
       labels: { aws-usage: "lab-cluster-ops" }
     attachPolicyARNs:
     - arn:aws:iam::aws:policy/AdministratorAccess
@@ -22,7 +22,7 @@ managedNodeGroups:
     minSize: 2
     desiredCapacity: 2
     maxSize: 2
-    availabilityZones: ["ca-central-1a", "ca-central-1b"]
+    availabilityZones: ["us-east-2a", "us-east-2b"]
     volumeSize: 20
     labels: {role: worker}
     tags:

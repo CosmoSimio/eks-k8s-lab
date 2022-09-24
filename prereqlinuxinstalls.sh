@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -e test2
 #If you launched your ec2 Linux server from the GUI first, then you can run this bash script
 
 echo "Updating your Linux distro. . . ."

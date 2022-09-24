@@ -24,17 +24,12 @@ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scrip
 chmod 700 get_helm.sh
 ./get_helm.sh
 
-<<<<<<< HEAD
 echo "Installing unzip tool"
 #Installs unzip command
 sudo apt install unzip
 
 echo "Installing aws CLI. . . ."
 #Install the AWS CLI tool
-=======
-echo "Installing aws CLI. . . ."
-#Install the aws CLI tool
->>>>>>> 9f8e08470719ee49095372db8519ddffb763c8b4
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
